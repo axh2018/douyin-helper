@@ -41,10 +41,45 @@ public class Main
 
 
         JSONObject res = client.detect(image, imageType,options);
-        System.out.println(res.toString(2));
+        //System.out.println(res.toString(2));
 
         //ToDo 处理返回Json数据
-
+        //返回json数据样例
+        /*
+            {
+              "result": {
+                "face_num": 1,
+                "face_list": [{
+                  "beauty": 68.4,
+                  "gender": {
+                    "probability": 1,
+                    "type": "female"
+                  },
+                  "liveness": {"livemapscore": 0.99},
+                  "angle": {
+                    "roll": 0.86,
+                    "pitch": 13.6,
+                    "yaw": -1.7
+                  },
+                  "face_token": "761b966ed11f3830e81022e84efa00b7",
+                  "location": {
+                    "top": 120.55,
+                    "left": 66.4,
+                    "rotation": 0,
+                    "width": 116,
+                    "height": 108
+                  },
+                  "face_probability": 1,
+                  "age": 25
+                }]
+              },
+              "log_id": 5505359900194,
+              "error_msg": "SUCCESS",
+              "cached": 0,
+              "error_code": 0,
+              "timestamp": 1585889664
+            }
+         */
         int errorCode = res.getInt("error_code");
         if (errorCode == 0)
         {

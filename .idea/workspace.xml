@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="" />
+    <list default="true" id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +34,12 @@
     <property name="android.sdk.path" value="D:/SDK/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/screen.png" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -71,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585888446726</updated>
-      <workItem from="1585888448194" duration="1475000" />
+      <workItem from="1585888448194" duration="2901000" />
     </task>
     <servers />
   </component>
@@ -87,22 +96,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="452" y="194" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585889262726" />
-    <state width="1493" height="502" key="GridCell.Tab.0.bottom" timestamp="1585889732052">
+    <state width="1493" height="502" key="GridCell.Tab.0.bottom" timestamp="1585890699440">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="502" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585889732052" />
-    <state width="1493" height="502" key="GridCell.Tab.0.center" timestamp="1585889732052">
+    <state width="1493" height="502" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585890699440" />
+    <state width="1493" height="502" key="GridCell.Tab.0.center" timestamp="1585890699440">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="502" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585889732052" />
-    <state width="1493" height="502" key="GridCell.Tab.0.left" timestamp="1585889732052">
+    <state width="1493" height="502" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585890699440" />
+    <state width="1493" height="502" key="GridCell.Tab.0.left" timestamp="1585890699440">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="502" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585889732052" />
-    <state width="1493" height="502" key="GridCell.Tab.0.right" timestamp="1585889732052">
+    <state width="1493" height="502" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585890699440" />
+    <state width="1493" height="502" key="GridCell.Tab.0.right" timestamp="1585890699440">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="502" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585889732052" />
+    <state width="1493" height="502" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585890699440" />
     <state x="152" y="0" key="SettingsEditor" timestamp="1585888679252">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
