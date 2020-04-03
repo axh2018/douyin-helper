@@ -1,9 +1,10 @@
+import com.alibaba.fastjson.JSONPath;
 import com.baidu.aip.face.AipFace;
 import org.json.JSONObject;
 
 import javax.swing.text.html.Option;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
@@ -20,6 +21,42 @@ public class Main
     Random r = new Random();
     public static void main(String[] args) throws IOException
     {
+
+        /*
+        判断手机是否连接成功，失败则退出程序
+         */
+        String adbAccess = "";
+
+        process = Runtime.getRuntime().exec(adbHome+"devices");
+        BufferedReader input = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        String line = "";
+        while ((line = input.readLine()) != null)
+            adbAccess += line;
+        System.out.println(adbAccess);
+        if(adbAccess.equals("List of devices attached"))
+        {
+            System.out.println("未检测到移动设备，请连接你的移动设备");
+            System.exit(-1);
+        }
+
+        /*
+        获取当前设备分辨率，不是2340*1080，则退出
+         */
+
+        String screenSize = "";
+        String lines = "";
+        process = Runtime.getRuntime().exec(adbHome+"shell wm size");
+        BufferedReader in = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        while ((lines = in.readLine()) != null)
+            screenSize = lines;
+        System.out.println("当前设备分辨率"+screenSize);
+        if(!screenSize.equals("Physical size: 1080x2340"))
+        {
+            System.out.println("请在2340*1080的设备下运行");
+            System.exit(-1);
+        }
+
+
         // 初始化一个AipFace
         AipFace client = new AipFace(APP_ID, API_KEY, SECRET_KEY);
 
@@ -33,7 +70,7 @@ public class Main
         String imageType = "BASE64";
 
         // 人脸检测
-        HashMap<String, String> options = new HashMap<String, String>();
+        HashMap<String, String> options = new HashMap<>();
         options.put("face_field", "beauty,age,gender");
         options.put("max_face_num", "2");
         options.put("face_type", "LIVE");
@@ -41,45 +78,16 @@ public class Main
 
 
         JSONObject res = client.detect(image, imageType,options);
-        //System.out.println(res.toString(2));
 
-        //ToDo 处理返回Json数据
-        //返回json数据样例
-        /*
-            {
-              "result": {
-                "face_num": 1,
-                "face_list": [{
-                  "beauty": 68.4,
-                  "gender": {
-                    "probability": 1,
-                    "type": "female"
-                  },
-                  "liveness": {"livemapscore": 0.99},
-                  "angle": {
-                    "roll": 0.86,
-                    "pitch": 13.6,
-                    "yaw": -1.7
-                  },
-                  "face_token": "761b966ed11f3830e81022e84efa00b7",
-                  "location": {
-                    "top": 120.55,
-                    "left": 66.4,
-                    "rotation": 0,
-                    "width": 116,
-                    "height": 108
-                  },
-                  "face_probability": 1,
-                  "age": 25
-                }]
-              },
-              "log_id": 5505359900194,
-              "error_msg": "SUCCESS",
-              "cached": 0,
-              "error_code": 0,
-              "timestamp": 1585889664
-            }
-         */
+        // 处理返回Json数据
+        Object age = JSONPath.read(res.toString(), "$.result.face_list[0].age");
+        Object gender = JSONPath.read(res.toString(), "$.result.face_list[0].gender.type");
+        Object beauty = JSONPath.read(res.toString(), "$.result.face_list[0].beauty");
+        System.out.println("年龄"+age);
+        System.out.println("性别"+gender);
+        System.out.println("颜值"+beauty);
+
+
         int errorCode = res.getInt("error_code");
         if (errorCode == 0)
         {
@@ -88,10 +96,12 @@ public class Main
         else
             System.out.println(res.getString("error_msg"));
 
+
+
         /*
         进入主循环
          */
-        /*
+
         while (true)
         {
             screenShot();
@@ -101,7 +111,6 @@ public class Main
             nextPage();
         }
 
-         */
     }
 
     /*
