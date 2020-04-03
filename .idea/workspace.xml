@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1a11mgSHhVgFk8XCRt05kBR4tKn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="D:/SDK/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/screen.png" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/screen.png" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\17598\Desktop\douyin-helper" />
+      <recent name="C:\Users\17598\Desktop\douyin-helper\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\17598\Desktop\douyin-helper" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="douyin-helper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="" />
+      <created>1585888446726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585888446726</updated>
+      <workItem from="1585888448194" duration="1475000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="70" y="87" width="1350" height="648" key="DiffContextDialog" timestamp="1585889328434">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="70" y="87" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1585889328434" />
+    <state x="452" y="194" key="FileChooserDialogImpl" timestamp="1585889262726">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="452" y="194" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585889262726" />
+    <state width="1493" height="502" key="GridCell.Tab.0.bottom" timestamp="1585889732052">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="502" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585889732052" />
+    <state width="1493" height="502" key="GridCell.Tab.0.center" timestamp="1585889732052">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="502" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585889732052" />
+    <state width="1493" height="502" key="GridCell.Tab.0.left" timestamp="1585889732052">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="502" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585889732052" />
+    <state width="1493" height="502" key="GridCell.Tab.0.right" timestamp="1585889732052">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="502" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585889732052" />
+    <state x="152" y="0" key="SettingsEditor" timestamp="1585888679252">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="152" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585888679252" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585889712229">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1585889712229" />
+  </component>
+</project>
