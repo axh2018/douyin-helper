@@ -2,7 +2,6 @@ import com.alibaba.fastjson.JSONPath;
 import com.baidu.aip.face.AipFace;
 import org.json.JSONObject;
 
-import javax.swing.text.html.Option;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -64,10 +63,7 @@ public class Main
         client.setConnectionTimeoutInMillis(2000);
         client.setSocketTimeoutInMillis(60000);
 
-        // 图片转Base64
-        String url = "screen.png";
-        String image = Base64Utils.ImageToBase64ByLocal(url);
-        String imageType = "BASE64";
+
 
         // 人脸检测
         HashMap<String, String> options = new HashMap<>();
@@ -77,41 +73,58 @@ public class Main
         options.put("liveness_control", "LOW");
 
 
-        JSONObject res = client.detect(image, imageType,options);
 
         // 处理返回Json数据
-        Object age = JSONPath.read(res.toString(), "$.result.face_list[0].age");
-        Object gender = JSONPath.read(res.toString(), "$.result.face_list[0].gender.type");
-        Object beauty = JSONPath.read(res.toString(), "$.result.face_list[0].beauty");
-        System.out.println("年龄"+age);
-        System.out.println("性别"+gender);
-        System.out.println("颜值"+beauty);
-
-
-        int errorCode = res.getInt("error_code");
-        if (errorCode == 0)
-        {
-            System.out.println("返回结果成功");
-        }
-        else
-            System.out.println(res.getString("error_msg"));
-
-
 
         /*
         进入主循环
          */
-
+        //ToDo base64转码有问题！
+        First:
         while (true)
         {
-            screenShot();
-            pullscreen();
-            praise();
-            follow();
+            //15s内请求截图5次
+            Second:
+            for(int i =0; i < 5; i++)
+            {
+                screenShot();
+                //先截图
+                pullscreen();
+                //拉取手机截图
+                String url = "screen.png";
+                String image = Base64Utils.ImageToBase64ByLocal(url);
+                String imageType = "BASE64";
+                // 图片转Base64编码
+                JSONObject res = client.detect(image, imageType,options);
+                //请求人脸识别API
+                //如果状态码不为0,进入下一个循环,打印报错信息
+                if(res.getInt("error_code") != 0)
+                {
+                    System.out.println("api调用失败,状态码"+res.getInt("error_code")+" 错误信息: "+res.getString("error_msg"));
+                    continue Second;
+                }
+
+                Object age = JSONPath.read(res.toString(), "$.result.face_list[0].age");
+                Object gender = JSONPath.read(res.toString(), "$.result.face_list[0].gender.type");
+                Object beauty = JSONPath.read(res.toString(), "$.result.face_list[0].beauty");
+
+                //如果年龄,颜值,性别符合要求,点赞并关注
+
+                if(Integer.parseInt(age.toString()) > 16 && Integer.parseInt(beauty.toString()) > 80 && gender.equals("female"))
+                {
+                    System.out.print("年龄 "+age);
+                    System.out.print(" 性别 "+gender);
+                    System.out.print(" 颜值 "+beauty);
+                    praise();
+                    follow();
+                    nextPage();
+                }
+                deleteScreen();
+            }
             nextPage();
         }
-
     }
+
 
     /*
     截图
@@ -123,7 +136,7 @@ public class Main
         System.out.println("已截屏");
         try
         {
-            Thread.sleep(1000);
+            Thread.sleep(500);
         }
         catch (InterruptedException e)
         {
@@ -137,10 +150,10 @@ public class Main
     {
         String cmd = adbHome + "pull /sdcard/screen.png";
         process = Runtime.getRuntime().exec(cmd);
-        System.out.println("正在拉取图片");
+        System.out.println("复制图片");
         try
         {
-            Thread.sleep(200);
+            Thread.sleep(500);
         }
         catch (InterruptedException e)
         {

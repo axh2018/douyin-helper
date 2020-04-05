@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/douyin-helper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/douyin-helper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base64Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base64Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +14,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +66,14 @@
       <recent name="C:\Users\17598\Desktop\douyin-helper" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Base64Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Base64Demo" />
+      <module name="douyin-helper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="douyin-helper" />
@@ -68,9 +81,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Base64Demo" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Base64Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -101,22 +119,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="452" y="194" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585896268579" />
-    <state width="1493" height="390" key="GridCell.Tab.0.bottom" timestamp="1585912518169">
+    <state width="1493" height="480" key="GridCell.Tab.0.bottom" timestamp="1586090926413">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="390" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585912518169" />
-    <state width="1493" height="390" key="GridCell.Tab.0.center" timestamp="1585912518169">
+    <state width="1493" height="480" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586090926413" />
+    <state width="1493" height="480" key="GridCell.Tab.0.center" timestamp="1586090926413">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="390" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585912518169" />
-    <state width="1493" height="390" key="GridCell.Tab.0.left" timestamp="1585912518168">
+    <state width="1493" height="480" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586090926413" />
+    <state width="1493" height="480" key="GridCell.Tab.0.left" timestamp="1586090926413">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="390" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585912518168" />
-    <state width="1493" height="390" key="GridCell.Tab.0.right" timestamp="1585912518169">
+    <state width="1493" height="480" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586090926413" />
+    <state width="1493" height="480" key="GridCell.Tab.0.right" timestamp="1586090926413">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="390" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585912518169" />
+    <state width="1493" height="480" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586090926413" />
     <state x="152" y="0" key="SettingsEditor" timestamp="1585896270092">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
