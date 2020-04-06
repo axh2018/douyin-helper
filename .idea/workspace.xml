@@ -4,7 +4,7 @@
     <list default="true" id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Base64Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base64Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base64Utils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/SDK/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Lib/fastjson-1.2.68.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,12 +57,12 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/screen.png" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\17598\Desktop\douyin-helper\src\Lib" />
-      <recent name="C:\Users\17598\Desktop\douyin-helper" />
-      <recent name="C:\Users\17598\Desktop\douyin-helper\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\17598\Desktop\douyin-helper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\17598\Desktop\douyin-helper\src" />
+      <recent name="C:\Users\17598\Desktop\douyin-helper\src\Lib" />
       <recent name="C:\Users\17598\Desktop\douyin-helper" />
     </key>
   </component>
@@ -104,6 +104,7 @@
       <updated>1585888446726</updated>
       <workItem from="1585888448194" duration="8542000" />
       <workItem from="1585907149173" duration="4869000" />
+      <workItem from="1586143766392" duration="11120000" />
     </task>
     <servers />
   </component>
@@ -111,34 +112,38 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="70" y="87" width="1350" height="648" key="DiffContextDialog" timestamp="1585889328434">
+    <state x="70" y="87" width="1350" height="648" key="DiffContextDialog" timestamp="1586147637867">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="70" y="87" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1585889328434" />
+    <state x="70" y="87" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1586147637867" />
     <state x="452" y="194" key="FileChooserDialogImpl" timestamp="1585896268579">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="452" y="194" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585896268579" />
-    <state width="1493" height="480" key="GridCell.Tab.0.bottom" timestamp="1586090926413">
+    <state width="1493" height="498" key="GridCell.Tab.0.bottom" timestamp="1586174289325">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="480" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586090926413" />
-    <state width="1493" height="480" key="GridCell.Tab.0.center" timestamp="1586090926413">
+    <state width="1493" height="498" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586174289325" />
+    <state width="1493" height="498" key="GridCell.Tab.0.center" timestamp="1586174289325">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="480" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586090926413" />
-    <state width="1493" height="480" key="GridCell.Tab.0.left" timestamp="1586090926413">
+    <state width="1493" height="498" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586174289325" />
+    <state width="1493" height="498" key="GridCell.Tab.0.left" timestamp="1586174289325">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="480" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586090926413" />
-    <state width="1493" height="480" key="GridCell.Tab.0.right" timestamp="1586090926413">
+    <state width="1493" height="498" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586174289325" />
+    <state width="1493" height="498" key="GridCell.Tab.0.right" timestamp="1586174289325">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="480" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586090926413" />
+    <state width="1493" height="498" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586174289325" />
     <state x="152" y="0" key="SettingsEditor" timestamp="1585896270092">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="152" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585896270092" />
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586143769885">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586143769885" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585889712229">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
