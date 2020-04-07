@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Base64Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -54,15 +51,16 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="cn.fantasticmao.ycy.intellij.plugin" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/screen.png" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\17598\Desktop\douyin-helper" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\17598\Desktop\douyin-helper\src" />
       <recent name="C:\Users\17598\Desktop\douyin-helper\src\Lib" />
+      <recent name="C:\Users\17598\Desktop\douyin-helper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\17598\Desktop\douyin-helper" />
     </key>
   </component>
@@ -81,13 +79,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainDev" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainDev" />
+      <module name="douyin-helper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Base64Demo" />
+      <item itemvalue="Application.MainDev" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainDev" />
         <item itemvalue="Application.Base64Demo" />
       </list>
     </recent_temporary>
@@ -105,6 +112,7 @@
       <workItem from="1585888448194" duration="8542000" />
       <workItem from="1585907149173" duration="4869000" />
       <workItem from="1586143766392" duration="11120000" />
+      <workItem from="1586229059153" duration="10115000" />
     </task>
     <servers />
   </component>
@@ -120,30 +128,46 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="452" y="194" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585896268579" />
-    <state width="1493" height="498" key="GridCell.Tab.0.bottom" timestamp="1586174289325">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1586257617560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="498" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586174289325" />
-    <state width="1493" height="498" key="GridCell.Tab.0.center" timestamp="1586174289325">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1586257617560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="498" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586174289325" />
-    <state width="1493" height="498" key="GridCell.Tab.0.left" timestamp="1586174289325">
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1586257617560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="498" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586174289325" />
-    <state width="1493" height="498" key="GridCell.Tab.0.right" timestamp="1586174289325">
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1586257617560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="498" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586174289325" />
-    <state x="152" y="0" key="SettingsEditor" timestamp="1585896270092">
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1586257617560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="152" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585896270092" />
-    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586143769885">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1586257617560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586143769885" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1586257617560">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1586257617560">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
+    <state x="218" y="21" key="SettingsEditor" timestamp="1586231479353">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="218" y="21" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586231479353" />
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586229059219">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586229059219" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585889712229">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

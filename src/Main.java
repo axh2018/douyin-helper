@@ -17,10 +17,10 @@ public class Main
     //设置ADB
     public static final String adbHome = "src\\Lib\\platform-tools\\adb ";
     public static Process process = null;
+    public static String imageType = "BASE64";
     Random r = new Random();
     public static void main(String[] args) throws IOException
     {
-
         /*
         判断手机是否连接成功，失败则退出程序
          */
@@ -55,15 +55,12 @@ public class Main
             System.exit(-1);
         }
 
-
         // 初始化一个AipFace
         AipFace client = new AipFace(APP_ID, API_KEY, SECRET_KEY);
 
         // 可选：设置网络连接参数
         client.setConnectionTimeoutInMillis(2000);
         client.setSocketTimeoutInMillis(60000);
-
-
 
         // 人脸检测
         HashMap<String, String> options = new HashMap<>();
@@ -73,97 +70,63 @@ public class Main
         options.put("liveness_control", "LOW");
 
 
-
         // 处理返回Json数据
 
         /*
         进入主循环
          */
-        //ToDo base64转码有问题！
-        File screen = new File("scree.png");
-
         while (true)
         {
-                screenShot();
-                //先截图并pull image
-                String url = "screen.png";
-                String image = Base64Util.encode(Base64Util.image2Bytes(url));
-                String imageType = "BASE64";
-                // 图片转Base64编码
-                JSONObject res = client.detect(image, imageType,options);
-                //请求人脸识别API
-                //如果状态码不为0,进入下一个循环,打印报错信息
-                if(res.getInt("error_code") != 0)
-                {
-                    System.out.println("api调用失败,状态码"+res.getInt("error_code")+" 错误信息: "+res.getString("error_msg"));
-                    deleteScreen();
-                    continue ;
-                }
-
+            screenShot();
+            sleep();
+            //先截图并pull image
+            String url = "screen.png";
+            String image = Base64Util.encode(Base64Util.image2Bytes(url));
+            // 图片转Base64编码
+            JSONObject res = client.detect(image, imageType,options);
+            //请求人脸识别API
+            //如果状态码不为0,进入下一个循环,打印报错信息
+            if(res.getInt("error_code") != 0)
+            {
+                System.out.println("api调用失败,状态码"+res.getInt("error_code")+" 错误信息: "+res.getString("error_msg"));
+                continue;
+            }
+            else
+            {
+                System.out.println("api调用成功,状态码"+res.getInt("error_code")+" 返回信息: " +res.getString("error_msg"));
                 Object age = JSONPath.read(res.toString(), "$.result.face_list[0].age");
                 Object gender = JSONPath.read(res.toString(), "$.result.face_list[0].gender.type");
                 Object beauty = JSONPath.read(res.toString(), "$.result.face_list[0].beauty");
 
                 //如果年龄,颜值,性别符合要求,点赞并关注
-
-                if(Integer.parseInt(age.toString()) > 16 && Double.parseDouble(beauty.toString()) > 80 && gender.equals("female"))
+                //先打印返回信息
+                System.out.print("年龄 " + age);
+                System.out.print(" 性别 " + gender);
+                System.out.print(" 颜值 " + beauty);
+                if (Integer.parseInt(age.toString()) > 16 && Double.parseDouble(beauty.toString()) > 70 && gender.equals("female"))
                 {
-                    System.out.print("年龄 "+age);
-                    System.out.print(" 性别 "+gender);
-                    System.out.print(" 颜值 "+beauty);
                     praise();
                     follow();
                     nextPage();
                 }
-                deleteScreen();
                 nextPage();
             }
-
-
+        }
     }
-
 
     /*
     截图并复制图片
      */
-
     public static void screenShot() throws IOException
     {
         String cmd = adbHome + "shell screencap -p /sdcard/screen.png";
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("已截屏");
-        try
-        {
-            Thread.sleep(1000);
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
-        String cmd_1 = adbHome + "pull /sdcard/screen.png screen.png .";
+        String cmd_1 = adbHome + "pull /sdcard/screen.png screen.png";
         process = Runtime.getRuntime().exec(cmd_1);
         System.out.println("复制图片");
-        try
-        {
-            Thread.sleep(1000);
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
     }
 
-    /*
-    删除图片
-     */
-    public static void deleteScreen() throws IOException
-    {
-        File screen = new File("screen.png");
-        if(screen.exists())
-            screen.delete();
-        String cmd = adbHome + "pull /sdcard/screen.png screen.png .";
-        process = Runtime.getRuntime().exec(cmd);
-    }
     /*
     点赞
      */
@@ -172,14 +135,6 @@ public class Main
         String cmd = adbHome + "shell input tap 987 1368";
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("已点赞");
-        try
-        {
-            Thread.sleep(500);
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
     }
     /*
     关注
@@ -189,14 +144,6 @@ public class Main
         String cmd = adbHome + "shell input tap 987 1174";
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("已关注");
-        try
-        {
-            Thread.sleep(500);
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
     }
     /*
     翻页
@@ -207,5 +154,18 @@ public class Main
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("下一页");
     }
-
+    /*
+    休眠
+    */
+    public static void sleep()
+    {
+        try
+        {
+            Thread.sleep(250);
+        }
+        catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+    }
 }
