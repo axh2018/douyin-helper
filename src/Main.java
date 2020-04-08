@@ -132,7 +132,7 @@ public class Main
      */
     public static void praise() throws IOException
     {
-        String cmd = adbHome + "shell input tap 987 1368";
+        String cmd = adbHome + "shell input tap 988 1321";
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("已点赞");
     }
@@ -141,7 +141,7 @@ public class Main
      */
     public static void follow() throws IOException
     {
-        String cmd = adbHome + "shell input tap 987 1174";
+        String cmd = adbHome + "shell input tap 988 1166";
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("已关注");
     }
@@ -150,7 +150,7 @@ public class Main
      */
     public static void nextPage() throws IOException
     {
-        String cmd = adbHome + "shell input swipe 500 700 500 200";
+        String cmd = adbHome + "shell input swipe 500 900 500 200";
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("下一页");
     }
