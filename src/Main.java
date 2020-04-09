@@ -77,40 +77,53 @@ public class Main
          */
         while (true)
         {
-            screenShot();
-            sleep();
-            //先截图并pull image
-            String url = "screen.png";
-            String image = Base64Util.encode(Base64Util.image2Bytes(url));
-            // 图片转Base64编码
-            JSONObject res = client.detect(image, imageType,options);
-            //请求人脸识别API
-            //如果状态码不为0,进入下一个循环,打印报错信息
-            if(res.getInt("error_code") != 0)
+            //对一个视频只分析五次
+            for (int i = 0; i < 5; i++)
             {
-                System.out.println("api调用失败,状态码"+res.getInt("error_code")+" 错误信息: "+res.getString("error_msg"));
-                continue;
-            }
-            else
-            {
-                System.out.println("api调用成功,状态码"+res.getInt("error_code")+" 返回信息: " +res.getString("error_msg"));
-                Object age = JSONPath.read(res.toString(), "$.result.face_list[0].age");
-                Object gender = JSONPath.read(res.toString(), "$.result.face_list[0].gender.type");
-                Object beauty = JSONPath.read(res.toString(), "$.result.face_list[0].beauty");
-
-                //如果年龄,颜值,性别符合要求,点赞并关注
-                //先打印返回信息
-                System.out.print("年龄 " + age);
-                System.out.print(" 性别 " + gender);
-                System.out.print(" 颜值 " + beauty);
-                if (Integer.parseInt(age.toString()) > 16 && Double.parseDouble(beauty.toString()) > 70 && gender.equals("female"))
+                screenShot();
+                pull();
+                sleep(0.5);
+                //先截图并pull image
+                String url = "screen.png";
+                String image = Base64Util.encode(Base64Util.image2Bytes(url));
+                // 图片转Base64编码
+                JSONObject res = client.detect(image, imageType, options);
+                //请求人脸识别API
+                //如果状态码不为0,进入下一个循环,打印报错信息
+                if (res.getInt("error_code") != 0)
                 {
-                    praise();
-                    follow();
-                    nextPage();
+                    System.out.println("api调用失败,状态码" + res.getInt("error_code") + " 错误信息: " + res.getString("error_msg"));
+                    continue;
                 }
-                nextPage();
+                else
+                {
+                    System.out.println("api调用成功,状态码" + res.getInt("error_code") + " 返回信息: " + res.getString("error_msg"));
+                    Object age = JSONPath.read(res.toString(), "$.result.face_list[0].age");
+                    Object gender = JSONPath.read(res.toString(), "$.result.face_list[0].gender.type");
+                    Object beauty = JSONPath.read(res.toString(), "$.result.face_list[0].beauty");
+
+                    //如果年龄,颜值,性别符合要求,点赞并关注
+                    //先打印返回信息
+                    System.out.print("年龄 " + age);
+                    System.out.print(" 性别 " + gender);
+                    System.out.print(" 颜值 " + beauty);
+                    if (Integer.parseInt(age.toString()) > 16 && Double.parseDouble(beauty.toString()) > 50 && gender.equals("female"))
+                    {
+                        praise();
+                        follow();
+                        nextPage();
+                        break;
+                    }
+                }
+                //分析完后删除图片
+                /*
+                File picComputer = new File("screen.ong");
+                if(picComputer.exists())
+                    picComputer.delete();
+                process = Runtime.getRuntime().exec("shell rm /sdcard/screen.png");
+                 */
             }
+            nextPage();
         }
     }
 
@@ -121,10 +134,13 @@ public class Main
     {
         String cmd = adbHome + "shell screencap -p /sdcard/screen.png";
         process = Runtime.getRuntime().exec(cmd);
-        System.out.println("已截屏");
+        System.out.print("已截屏");
+    }
+    public static void pull() throws IOException
+    {
         String cmd_1 = adbHome + "pull /sdcard/screen.png screen.png";
         process = Runtime.getRuntime().exec(cmd_1);
-        System.out.println("复制图片");
+        System.out.println(" 复制图片 ");
     }
 
     /*
@@ -157,11 +173,11 @@ public class Main
     /*
     休眠
     */
-    public static void sleep()
+    public static void sleep(double x)
     {
         try
         {
-            Thread.sleep(250);
+            Thread.sleep((long) (x*1000));
         }
         catch (InterruptedException e)
         {

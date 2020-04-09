@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/screen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -50,7 +53,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="cn.fantasticmao.ycy.intellij.plugin" />
+    <property name="settings.editor.selected.configurable" value="sshConsole" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/screen.png" />
   </component>
   <component name="RecentsManager">
@@ -98,6 +101,10 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -113,6 +120,8 @@
       <workItem from="1586143766392" duration="11120000" />
       <workItem from="1586229059153" duration="10115000" />
       <workItem from="1586339619436" duration="3532000" />
+      <workItem from="1586345919420" duration="130000" />
+      <workItem from="1586414722371" duration="5697000" />
     </task>
     <servers />
   </component>
@@ -128,22 +137,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="452" y="194" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585896268579" />
-    <state width="1493" height="286" key="GridCell.Tab.0.bottom" timestamp="1586344024233">
+    <state width="1493" height="377" key="GridCell.Tab.0.bottom" timestamp="1586430628851">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="286" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586344024233" />
-    <state width="1493" height="286" key="GridCell.Tab.0.center" timestamp="1586344024232">
+    <state width="1493" height="377" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586430628851" />
+    <state width="1493" height="377" key="GridCell.Tab.0.center" timestamp="1586430628851">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="286" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586344024232" />
-    <state width="1493" height="286" key="GridCell.Tab.0.left" timestamp="1586344024232">
+    <state width="1493" height="377" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586430628851" />
+    <state width="1493" height="377" key="GridCell.Tab.0.left" timestamp="1586430628851">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="286" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586344024232" />
-    <state width="1493" height="286" key="GridCell.Tab.0.right" timestamp="1586344024233">
+    <state width="1493" height="377" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586430628851" />
+    <state width="1493" height="377" key="GridCell.Tab.0.right" timestamp="1586430628851">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="286" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586344024233" />
+    <state width="1493" height="377" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586430628851" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1586257617560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -160,14 +169,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1586257617560" />
-    <state x="218" y="21" key="SettingsEditor" timestamp="1586231479353">
+    <state x="262" y="51" key="SettingsEditor" timestamp="1586421306631">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="218" y="21" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586231479353" />
-    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586339692441">
+    <state x="262" y="51" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586421306631" />
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586345921586">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586339692441" />
+    <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586345921586" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585889712229">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
