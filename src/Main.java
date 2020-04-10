@@ -39,7 +39,7 @@ public class Main
         }
 
         /*
-        获取当前设备分辨率，不是2340*1080，则退出
+        获取当前设备分辨率
          */
 
         String screenSize = "";
@@ -51,8 +51,8 @@ public class Main
         System.out.println("当前设备分辨率"+screenSize);
         if(!screenSize.equals("Physical size: 1080x2340"))
         {
-            System.out.println("请在2340*1080的设备下运行");
-            System.exit(-1);
+            System.out.println("当前分辨率不为2340x1080,请将你的分辨率配置替换掉default.json文件");
+            sleep(25);
         }
 
         // 初始化一个AipFace
