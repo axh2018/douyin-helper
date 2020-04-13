@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc61e4ca-263d-4196-93d3-d6ae757a254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/SDK/sdk" />
@@ -121,6 +121,8 @@
       <workItem from="1586345919420" duration="130000" />
       <workItem from="1586414722371" duration="5697000" />
       <workItem from="1586492676111" duration="1958000" />
+      <workItem from="1586597037834" duration="1102000" />
+      <workItem from="1586752531451" duration="2919000" />
     </task>
     <servers />
   </component>
