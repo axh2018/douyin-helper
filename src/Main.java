@@ -50,13 +50,14 @@ public class Main
             for (int i = 0; i < 5; i++)
             {
                 Oprations.screenShot();
+
                 Oprations.pull();
-                Oprations.sleep(0.2);
+                //Oprations.sleep();
                 //截图并pull image
                 String url = "screen.png";
                 String image = Base64Util.encode(Base64Util.image2Bytes(url));
                 // 图片转Base64编码
-                JSONObject res = client.detect(image, imageType, options);
+                JSONObject res = client.detect(image,imageType,options);
                 //请求人脸识别API
                 //如果状态码不为0,进入下一个循环,打印报错信息
                 if (res.getInt("error_code") != 0)
@@ -75,12 +76,11 @@ public class Main
                     //先打印返回信息
                     System.out.print("年龄 " + age);
                     System.out.print(" 性别 " + gender);
-                    System.out.print(" 颜值 " + beauty);
-                    if (Integer.parseInt(age.toString()) > 16 && Double.parseDouble(beauty.toString()) > 50 && gender.equals("female"))
+                    System.out.println(" 颜值 " + beauty);
+                    if (Integer.parseInt(age.toString()) > 16 && Double.parseDouble(beauty.toString()) > 60 && gender.equals("female"))
                     {
                         Oprations.praise();
                         Oprations.follow();
-                        Oprations.nextPage();
                         break;
                     }
                 }

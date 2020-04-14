@@ -42,49 +42,55 @@ public class Oprations
     {
         String cmd = adbHome + "shell screencap -p /sdcard/screen.png";
         process = Runtime.getRuntime().exec(cmd);
-        System.out.print("已截屏");
+        System.out.print("截屏--->");
     }
     public static void pull() throws IOException
     {
         String cmd_1 = adbHome + "pull /sdcard/screen.png screen.png";
         process = Runtime.getRuntime().exec(cmd_1);
-        System.out.println(" 复制图片 ");
+        System.out.println(" 复制图片---> ");
     }
 
 
     //点赞
     public static void praise() throws IOException
     {
+        sleep();
         String cmd = adbHome + "shell input tap "+
                      String.valueOf(GetCoordinate.getStarX()) + " "
                      + String.valueOf(GetCoordinate.getStarY());
         process = Runtime.getRuntime().exec(cmd);
-        System.out.println("已点赞");
+        System.out.print("已点赞 ");
+        sleep();
     }
 
     //关注
     public static void follow() throws IOException
     {
+        sleep();
         String cmd = adbHome + "shell input tap "+
                      String.valueOf(GetCoordinate.getFollowX()) + " "
                      + String.valueOf(GetCoordinate.getFollowY());
         process = Runtime.getRuntime().exec(cmd);
-        System.out.println("已关注");
+        System.out.println(" 已关注");
+        sleep();
     }
 
     //翻页
     public static void nextPage() throws IOException
     {
-        String cmd = adbHome + "shell input swipe 540 900 540 200";
+        sleep();
+        String cmd = adbHome + " shell input swipe 540 1300 540 480";
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("下一页");
+        sleep();
     }
     //休眠
-    public static void sleep(double x)
+    public static void sleep()
     {
         try
         {
-            Thread.sleep((long) (x*1000));
+            Thread.sleep(150);
         }
         catch (InterruptedException e)
         {
