@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -55,42 +56,52 @@ public class Oprations
     //点赞
     public static void praise() throws IOException
     {
-        sleep();
         String cmd = adbHome + "shell input tap "+
                      String.valueOf(GetCoordinate.getStarX()) + " "
                      + String.valueOf(GetCoordinate.getStarY());
         process = Runtime.getRuntime().exec(cmd);
         System.out.print("已点赞 ");
-        sleep();
+        sleep(0.5);
     }
 
     //关注
     public static void follow() throws IOException
     {
-        sleep();
         String cmd = adbHome + "shell input tap "+
                      String.valueOf(GetCoordinate.getFollowX()) + " "
                      + String.valueOf(GetCoordinate.getFollowY());
         process = Runtime.getRuntime().exec(cmd);
         System.out.println(" 已关注");
-        sleep();
+        sleep(0.5);
     }
 
     //翻页
     public static void nextPage() throws IOException
     {
-        sleep();
-        String cmd = adbHome + " shell input swipe 540 1300 540 480";
+        String cmd = adbHome + " shell input swipe 540 1470 540 1170 200";
         process = Runtime.getRuntime().exec(cmd);
         System.out.println("下一页");
-        sleep();
+        sleep(1.5);
+    }
+    //删除手机图片
+    public static void deletePic()
+    {
+        String cmd = adbHome + " shell rm /sdcard/screen.png ";
+        try
+        {
+            process = Runtime.getRuntime().exec(cmd);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
     }
     //休眠
-    public static void sleep()
+    public static void sleep(double x)
     {
         try
         {
-            Thread.sleep(150);
+            Thread.sleep((long) (1000*x));
         }
         catch (InterruptedException e)
         {

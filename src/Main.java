@@ -46,8 +46,10 @@ public class Main
          */
         while (true)
         {
-            //对一个视频只分析五次
-            for (int i = 0; i < 5; i++)
+            Oprations.nextPage();
+            Oprations.sleep(1.0);
+            //对一个视频只分析4次
+            for (int i = 0; i < 4; i++)
             {
                 Oprations.screenShot();
 
@@ -85,7 +87,6 @@ public class Main
                     }
                 }
             }
-            Oprations.nextPage();
         }
     }
 }
