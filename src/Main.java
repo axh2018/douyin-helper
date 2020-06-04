@@ -3,10 +3,8 @@ import com.baidu.aip.face.AipFace;
 import org.json.JSONObject;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Random;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class Main
 {
@@ -38,6 +36,20 @@ public class Main
         options.put("face_type", "LIVE");
         options.put("liveness_control", "LOW");
 
+        //创建log日志
+        File log = new File("log.txt");
+        if(!log.exists())
+        {
+            log.createNewFile();
+        }
+        //FileOutputStream fos = new FileOutputStream(log);
+        //FileWriter writer = new FileWriter(log,true);
+
+        FileWriter fileWriter = new FileWriter(log.getName(),true);
+        BufferedWriter bufferWritter = new BufferedWriter(fileWriter);
+        //获取时间
+        SimpleDateFormat sdf = new SimpleDateFormat();// 格式化时间
+        sdf.applyPattern("yyyy-MM-dd HH:mm:ss a");// a为am/pm的标记
 
         // 处理返回Json数据
 
@@ -62,6 +74,13 @@ public class Main
                 JSONObject res = client.detect(image,imageType,options);
                 //请求人脸识别API
                 //如果状态码不为0,进入下一个循环,打印报错信息
+
+                //writer.write(res.toString());
+                bufferWritter.write(sdf.format(new Date())+"\n");
+                bufferWritter.write(res.toString(2)+"\n");
+                bufferWritter.flush();
+                //out.close();
+
                 if (res.getInt("error_code") != 0)
                 {
                     System.out.println("api调用失败,状态码" + res.getInt("error_code") + " 错误信息: " + res.getString("error_msg"));

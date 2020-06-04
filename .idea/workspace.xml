@@ -60,25 +60,18 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/screen.png" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\codes\git-repo\douyin-helper" />
-      <recent name="C:\Users\17598\Desktop\douyin-helper" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\17598\Desktop\douyin-helper\screenConfig\2340x1080" />
       <recent name="C:\Users\17598\Desktop\douyin-helper\src" />
       <recent name="C:\Users\17598\Desktop\douyin-helper\src\Lib" />
       <recent name="C:\Users\17598\Desktop\douyin-helper" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\codes\git-repo\douyin-helper" />
+      <recent name="C:\Users\17598\Desktop\douyin-helper" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Base64Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Base64Demo" />
-      <module name="douyin-helper" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GetCoordinate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GetCoordinate" />
       <module name="douyin-helper" />
@@ -93,15 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainDev" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainDev" />
+    <configuration name="Remove" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Remove" />
       <module name="douyin-helper" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyJson" />
+    <configuration name="RemoveCollections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RemoveCollections" />
+      <module name="douyin-helper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reply" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Reply" />
       <module name="douyin-helper" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,18 +109,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Base64Demo" />
-      <item itemvalue="Application.MainDev" />
-      <item itemvalue="Application.MyJson" />
       <item itemvalue="Application.GetCoordinate" />
+      <item itemvalue="Application.RemoveCollections" />
+      <item itemvalue="Application.Remove" />
+      <item itemvalue="Application.Reply" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Reply" />
+        <item itemvalue="Application.Remove" />
+        <item itemvalue="Application.RemoveCollections" />
         <item itemvalue="Application.GetCoordinate" />
-        <item itemvalue="Application.MyJson" />
-        <item itemvalue="Application.MainDev" />
-        <item itemvalue="Application.Base64Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +152,16 @@
       <workItem from="1586847936341" duration="7108000" />
       <workItem from="1586916189478" duration="1560000" />
       <workItem from="1586919731733" duration="3677000" />
+      <workItem from="1589867968171" duration="313000" />
+      <workItem from="1589868299555" duration="9857000" />
+      <workItem from="1590037871254" duration="3956000" />
+      <workItem from="1590199554718" duration="1016000" />
+      <workItem from="1590385101963" duration="1658000" />
+      <workItem from="1590387534988" duration="804000" />
+      <workItem from="1590390173070" duration="2127000" />
+      <workItem from="1590483650080" duration="604000" />
+      <workItem from="1591270500656" duration="2859000" />
+      <workItem from="1591273595551" duration="463000" />
     </task>
     <servers />
   </component>
@@ -171,38 +181,38 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="452" y="194" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585896268579" />
-    <state width="1493" height="496" key="GridCell.Tab.0.bottom" timestamp="1586925888154">
+    <state width="1493" height="315" key="GridCell.Tab.0.bottom" timestamp="1591273823767">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="496" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586925888154" />
-    <state width="1493" height="496" key="GridCell.Tab.0.center" timestamp="1586925888154">
+    <state width="1493" height="315" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1591273823767" />
+    <state width="1493" height="315" key="GridCell.Tab.0.center" timestamp="1591273823767">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="496" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586925888154" />
-    <state width="1493" height="496" key="GridCell.Tab.0.left" timestamp="1586925888154">
+    <state width="1493" height="315" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1591273823767" />
+    <state width="1493" height="315" key="GridCell.Tab.0.left" timestamp="1591273823767">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="496" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586925888154" />
-    <state width="1493" height="496" key="GridCell.Tab.0.right" timestamp="1586925888154">
+    <state width="1493" height="315" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1591273823767" />
+    <state width="1493" height="315" key="GridCell.Tab.0.right" timestamp="1591273823767">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="496" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586925888154" />
-    <state width="1493" height="399" key="GridCell.Tab.1.bottom" timestamp="1586870350931">
+    <state width="1493" height="315" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1591273823767" />
+    <state width="1493" height="457" key="GridCell.Tab.1.bottom" timestamp="1591273362549">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="399" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586870350931" />
-    <state width="1493" height="399" key="GridCell.Tab.1.center" timestamp="1586870350931">
+    <state width="1493" height="457" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1591273362549" />
+    <state width="1493" height="457" key="GridCell.Tab.1.center" timestamp="1591273362549">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="399" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1586870350931" />
-    <state width="1493" height="399" key="GridCell.Tab.1.left" timestamp="1586870350931">
+    <state width="1493" height="457" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1591273362549" />
+    <state width="1493" height="457" key="GridCell.Tab.1.left" timestamp="1591273362549">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="399" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1586870350931" />
-    <state width="1493" height="399" key="GridCell.Tab.1.right" timestamp="1586870350931">
+    <state width="1493" height="457" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1591273362549" />
+    <state width="1493" height="457" key="GridCell.Tab.1.right" timestamp="1591273362549">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="399" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1586870350931" />
+    <state width="1493" height="457" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1591273362549" />
     <state x="290" y="62" key="SettingsEditor" timestamp="1586848017437">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -211,10 +221,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1586345921586" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1586762167293">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1589881714966">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1586762167293" />
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1589881714966" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585889712229">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

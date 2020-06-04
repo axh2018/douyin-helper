@@ -1,0 +1,129 @@
+2020-06-04 20:34:42 下午
+{
+  "result": null,
+  "log_id": 1535050017945,
+  "error_msg": "pic not has face",
+  "cached": 0,
+  "error_code": 222202,
+  "timestamp": 1591274082
+}
+2020-06-04 20:34:55 下午
+{
+  "result": null,
+  "log_id": 7565656589101,
+  "error_msg": "pic not has face",
+  "cached": 0,
+  "error_code": 222202,
+  "timestamp": 1591274095
+}
+2020-06-04 20:35:05 下午
+{
+  "result": {
+    "face_num": 1,
+    "face_list": [{
+      "beauty": 51.31,
+      "gender": {
+        "probability": 1,
+        "type": "female"
+      },
+      "liveness": {"livemapscore": 0.95},
+      "angle": {
+        "roll": 26.52,
+        "pitch": 15.01,
+        "yaw": -10.23
+      },
+      "face_token": "7f8fb769eed1b69abe82c36b2d6f3efc",
+      "location": {
+        "top": 467.23,
+        "left": 487.3,
+        "rotation": 26,
+        "width": 656,
+        "height": 701
+      },
+      "face_probability": 1,
+      "age": 22
+    }]
+  },
+  "log_id": 18400135154,
+  "error_msg": "SUCCESS",
+  "cached": 0,
+  "error_code": 0,
+  "timestamp": 1591274105
+}
+2020-06-04 20:35:12 下午
+{
+  "result": {
+    "face_num": 1,
+    "face_list": [{
+      "beauty": 55.85,
+      "gender": {
+        "probability": 1,
+        "type": "female"
+      },
+      "liveness": {"livemapscore": 0.61},
+      "angle": {
+        "roll": 29.52,
+        "pitch": 10.11,
+        "yaw": -27.34
+      },
+      "face_token": "b2b5c3fb5d53588498dc1da83c3e263c",
+      "location": {
+        "top": 402.37,
+        "left": 558.98,
+        "rotation": 27,
+        "width": 662,
+        "height": 722
+      },
+      "face_probability": 1,
+      "age": 23
+    }]
+  },
+  "log_id": 1520110110100,
+  "error_msg": "SUCCESS",
+  "cached": 0,
+  "error_code": 0,
+  "timestamp": 1591274111
+}
+2020-06-04 20:35:23 下午
+{
+  "result": {
+    "face_num": 1,
+    "face_list": [{
+      "beauty": 45.94,
+      "gender": {
+        "probability": 1,
+        "type": "female"
+      },
+      "liveness": {"livemapscore": 0.35},
+      "angle": {
+        "roll": 27.55,
+        "pitch": 6.86,
+        "yaw": -7.35
+      },
+      "face_token": "2cb2fe5561b8aa81340aa1639c789342",
+      "location": {
+        "top": 368.78,
+        "left": 490.35,
+        "rotation": 27,
+        "width": 657,
+        "height": 711
+      },
+      "face_probability": 1,
+      "age": 22
+    }]
+  },
+  "log_id": 9910184996505,
+  "error_msg": "SUCCESS",
+  "cached": 0,
+  "error_code": 0,
+  "timestamp": 1591274122
+}
+2020-06-04 20:35:30 下午
+{
+  "result": null,
+  "log_id": 8925457575890,
+  "error_msg": "pic not has face",
+  "cached": 0,
+  "error_code": 222202,
+  "timestamp": 1591274129
+}

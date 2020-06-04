@@ -50,6 +50,7 @@ public class Oprations
         String cmd_1 = adbHome + "pull /sdcard/screen.png screen.png";
         process = Runtime.getRuntime().exec(cmd_1);
         System.out.println(" 复制图片---> ");
+        sleep(1.2);
     }
 
 
